@@ -1,0 +1,22 @@
+# mini-proxy 专属忽略规则（凭证中转服务，工作目录独立于仓库其余部分）
+
+# 凭证缓存：data/credentials/*.json 含 access_token / refresh_token，绝不入库
+/data/
+
+# 编译产物（可执行文件）
+/oai-mini-proxy
+/mini-proxy
+/oai
+
+# 测试临时文件与日志
+.tmp-*
+*.log
+
+# 测试与覆盖率产物
+*.test
+coverage.out
+
+# 系统与编辑器
+.DS_Store
+.idea/
+.vscode/
